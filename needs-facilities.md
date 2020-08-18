@@ -2,12 +2,18 @@
 
 Scenario: Report visitor trends during a week of operation
 
-  Given
-  When
-  Then
-
+  Given: The system is up and running, visitor data is available .
+  
+  When: Facilities manager asks for a report .
+  
+  Then: System displays weekly trends for the visitors .
+  
 Scenario: Alert when seating capacity is full
 
-  Given
-  When
-  Then
+  Given: The system is up and running, the visitor data
+         and number of seats available .
+  
+  When: Patient visits the hospital
+        and visitor count exceeds the seating capacity .
+  
+  Then: Seating capacity full alert is sent to the facilities manager.
