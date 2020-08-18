@@ -16,4 +16,4 @@ Scenario: Alert when seating capacity is full
   When: Patient visits the hospital
         and visitor count exceeds the seating capacity .
   
-  Then: Seating capacity full alert is sent to the facilities manager.
+  Then: System sends Seating capacity full alert to the facilities manager.
