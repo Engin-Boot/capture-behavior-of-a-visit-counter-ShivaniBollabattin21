@@ -15,4 +15,4 @@ Scenario: Compute parking slots to reserve for visiting specialists
   
   When: Specialist enters the hospital and has a visitor card.
   
-  Then: A parking slot from reserved place is allocated to the specialist.
+  Then: System allocates a parking slot from reserved place to the specialist.
