@@ -21,7 +21,7 @@ Scenario: Show patient visits-counts per shifts .
 
   Given: The system is up and running and it
          stores data of visit count in shifts( 3 categories - M, A, N)
-         based on timestamp
+         based on time stamp .
   
   When: Director asks for the count for a particular shift.
   
