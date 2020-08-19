@@ -16,3 +16,13 @@ Scenario: Compute parking slots to reserve for visiting specialists
   When: Specialist enters the hospital and has a visitor card.
   
   Then: System allocates a parking slot from reserved place to the specialist.
+
+Scenario: Show patient visits-counts per shifts .
+
+  Given: The system is up and running and it
+         stores data of visit count in shifts( 3 categories - M, A, N)
+         based on timestamp
+  
+  When: Director asks for the count for a particular shift.
+  
+  Then: System displays the visitor count as per the requested shift.
